@@ -2,15 +2,37 @@
 <html>
     <head>
         <title>Learning Basic HTML</title>
+        <style>
+            aside {
+                width: 20%;
+                padding: 15px;
+                margin-top: -200px;
+                float: right;
+                background-color: lightgray;
+            }
+        </style>
     </head>
     <body>
         <!-- Creates an hyperlink -->
         <a href="https://www.lexicon.se" target="_blank">Visit Lexicon.</a>
         <br><br>
 
-        <!-- Creates an image -->
-        <img src="images/Lion.jpg" title="The Lion is a king of the Jungle." 
-            width="250" height="250">
+        <!-- Creates an image and used figure tag-->
+        <div>
+            <figure>
+                <img src="images/Lion.jpg" title="The Lion is a king of the Jungle." 
+                    width="250" height="250">
+                <figcaption>Speed: 80 km/h (Maximum, In Short Bursts)</figcaption>
+            </figure>
+
+            <!-- Using aside tag -->
+            <aside>
+                <p>The lion is a large cat of the genus Panthera, currently found 
+                    only in Sub-Saharan Africa and India. It has a muscular, 
+                    broad-chested body; a short, rounded head; round ears; and a dark, 
+                    hairy tuft at the tip of its tail.</p>
+            </aside>
+        </div>
         <br><br>
 
         <!-- The alt message will be displayed, if the image is not displayed.-->
